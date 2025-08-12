@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop The Tote - Una Tote para toda la vida</title>
+    <meta name="description" content="Descubre las mejores bolsas tote de Guatemala. Calidad premium, diseños únicos y entrega gratis en órdenes arriba de Q500.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header id="header" class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Pop The Tote</h2>
+                    <span class="logo-tagline">Guatemala</span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#productos" class="nav-link">Productos</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="#seguimiento" class="nav-link">Seguimiento</a></li>
+                </ul>
+                
+                <div class="nav-icons">
+                    <div class="search-icon" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="cart-icon" onclick="toggleCart()">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Search Bar -->
+        <div class="search-container" id="search-container">
+            <input type="text" placeholder="Buscar productos..." id="search-input">
+            <button type="button"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title">Una Tote para <span class="highlight">toda la vida</span></h1>
+                <p class="hero-subtitle">Descubre nuestra colección de bolsas tote premium. Calidad excepcional, diseños únicos y el estilo que defines tú.</p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Entrega gratis en órdenes Q500+</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Entrega en 3 días hábiles</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-award"></i>
+                        <span>Calidad garantizada</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('productos')">Ver Productos</button>
+                    <button class="btn btn-secondary" onclick="openWhatsApp()">
+                        <i class="fab fa-whatsapp"></i> Contactar
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <div class="tote-showcase">
+                    <div class="tote-item main-tote">
+                        <div class="tote-img">
+                            <div class="tote-placeholder">Tote Principal</div>
+                        </div>
+                    </div>
+                    <div class="tote-item floating-tote-1">
+                        <div class="tote-img">
+                            <div class="tote-placeholder">Tote 2</div>
+                        </div>
+                    </div>
+                    <div class="tote-item floating-tote-2">
+                        <div class="tote-img">
+                            <div class="tote-placeholder">Tote 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" onclick="scrollToSection('productos')">
+            <div class="scroll-text">Explorar</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Productos Destacados</h2>
+            <div class="featured-grid">
+                <div class="featured-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="featured-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Más Popular</h3>
+                    <p>Tote Bag Grande Vertical</p>
+                    <span class="price">Desde Q94</span>
+                </div>
+                <div class="featured-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Tendencia</h3>
+                    <p>Tote Bag Tie-Dye</p>
+                    <span class="price">Edición Limitada</span>
+                </div>
+                <div class="featured-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="featured-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Favorito</h3>
+                    <p>Tote Bag Grande Cuadrada</p>
+                    <span class="price">Desde Q179</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="products-section">
+        <div class="container">
+            <div class="products-header" data-aos="fade-up">
+                <h2 class="section-title">Nuestra Colección</h2>
+                <p class="section-subtitle">Encuentra la tote perfecta para tu estilo de vida</p>
+            </div>
+            
+            <!-- Product Filters -->
+            <div class="product-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="grande">Grandes</button>
+                <button class="filter-btn" data-filter="mediana">Medianas</button>
+                <button class="filter-btn" data-filter="pequena">Pequeñas</button>
+                <button class="filter-btn" data-filter="especial">Especiales</button>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="grande" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image">
+                        <div class="product-placeholder">Tote Bag Grande Cuadrada</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openQuickView(1)">Vista Rápida</button>
+                            <button class="btn-add-cart" onclick="addToCart(1)">Agregar</button>
+                        </div>
+                        <span class="product-badge">Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Tote Bag Grande Cuadrada</h3>
+                        <p class="product-description">Perfecta para el día a día, con amplio espacio</p>
+                        <div class="product-price">
+                            <span class="current-price">Q179 - Q250</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #000"></span>
+                            <span class="color-dot" style="background: #8B4513"></span>
+                            <span class="color-dot" style="background: #FF6B6B"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" data-category="grande" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-image">
+                        <div class="product-placeholder">Tote Bag Jumbo</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openQuickView(2)">Vista Rápida</button>
+                            <button class="btn-add-cart" onclick="addToCart(2)">Agregar</button>
+                        </div>
+                        <span class="product-badge sale">Oferta</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Tote Bag Jumbo</h3>
+                        <p class="product-description">La más grande de nuestra colección</p>
+                        <div class="product-price">
+                            <span class="current-price">Q115 - Q195</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #000"></span>
+                            <span class="color-dot" style="background: #4ECDC4"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" data-category="grande" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-image">
+                        <div class="product-placeholder">Tote Bag Grande Vertical</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openQuickView(3)">Vista Rápida</button>
+                            <button class="btn-add-cart" onclick="addToCart(3)">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Tote Bag Grande Vertical</h3>
+                        <p class="product-description">Diseño vertical elegante y funcional</p>
+                        <div class="product-price">
+                            <span class="current-price">Q94 - Q135</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #000"></span>
+                            <span class="color-dot" style="background: #45B7D1"></span>
+                            <span class="color-dot" style="background: #96CEB4"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card" data-category="grande" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-image">
+                        <div class="product-placeholder">Tote Bag Grande Horizontal</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openQuickView(4)">Vista Rápida</button>
+                            <button class="btn-add-cart" onclick="addToCart(4)">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Tote Bag Grande Horizontal</h3>
+                        <p class="product-description">Perfecta para laptops y documentos</p>
+                        <div class="product-price">
+                            <span class="current-price">Q94 - Q135</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #000"></span>
+                            <span class="color-dot" style="background: #E17055"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card" data-category="mediana" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image">
+                        <div class="product-placeholder">Tote Bag Mediana</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openQuickView(5)">Vista Rápida</button>
+                            <button class="btn-add-cart" onclick="addToCart(5)">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Tote Bag Mediana</h3>
+                        <p class="product-description">Tamaño perfecto para uso diario</p>
+                        <div class="product-price">
+                            <span class="current-price">Q72 - Q101</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #000"></span>
+                            <span class="color-dot" style="background: #A29BFE"></span>
+                            <span class="color-dot" style="background: #FD79A8"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card" data-category="pequena" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-image">
+                        <div class="product-placeholder">Tote Bag Pequeña</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openQuickView(6)">Vista Rápida</button>
+                            <button class="btn-add-cart" onclick="addToCart(6)">Agregar</button>
+                        </div>
+                        <span class="product-badge new">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Tote Bag Pequeña</h3>
+                        <p class="product-description">Compacta y práctica para ocasiones especiales</p>
+                        <div class="product-price">
+                            <span class="current-price">Q65 - Q95</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #000"></span>
+                            <span class="color-dot" style="background: #FDCB6E"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 7 - Tie Dye -->
+                <div class="product-card" data-category="especial" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-image">
+                        <div class="product-placeholder gradient-bg">Ñejitos Tie-Dye Tote Bag</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openQuickView(7)">Vista Rápida</button>
+                            <button class="btn-add-cart" onclick="addToCart(7)">Agregar</button>
+                        </div>
+                        <span class="product-badge limited">Edición Limitada</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ñejitos Tie-Dye Tote Bag</h3>
+                        <p class="product-description">Diseño único tie-dye, cada pieza es diferente</p>
+                        <div class="product-price">
+                            <span class="current-price">Precio Especial</span>
+                        </div>
+                        <div class="product-colors">
+                            <span class="color-dot gradient-dot"></span>
+                            <span class="color-dot" style="background: #000"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2 class="section-title">¿Por qué Pop The Tote?</h2>
+                    <p class="about-description">
+                        En Pop The Tote creemos que cada persona merece una bolsa que refleje su personalidad y estilo. 
+                        Desde Guatemala, confeccionamos cada tote con materiales de primera calidad y atención al detalle.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Materiales Sostenibles</h3>
+                                <p>Utilizamos materiales eco-friendly y procesos responsables</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Hecho a Mano</h3>
+                                <p>Cada tote es confeccionada con cuidado por artesanos guatemaltecos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Garantía de Calidad</h3>
+                                <p>Respaldamos la durabilidad de nuestros productos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-placeholder">
+                        <i class="fas fa-heart"></i>
+                        <p>Artesanos guatemaltecos trabajando</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Lo que dicen nuestros clientes</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Mi tote bag ha sido mi compañera fiel durante más de un año. La calidad es excepcional y el diseño es perfecto para mi estilo."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <span>Ciudad de Guatemala</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Excelente servicio al cliente y la entrega fue súper rápida. La tote bag tie-dye es única y recibo muchos cumplidos."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>Ana Rodríguez</h4>
+                            <span>Quetzaltenango</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "La tote jumbo es perfecta para mis compras y el trabajo. Muy resistente y el tamaño es ideal. Totalmente recomendada."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">C</div>
+                        <div class="author-info">
+                            <h4>Carlos Méndez</h4>
+                            <span>Antigua Guatemala</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="contact-header" data-aos="fade-up">
+                <h2 class="section-title">¿Tienes alguna pregunta?</h2>
+                <p class="section-subtitle">Estamos aquí para ayudarte. Contáctanos por cualquier medio</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p>+502 4001 1272</p>
+                            <button class="btn btn-outline" onclick="openWhatsApp()">Enviar Mensaje</button>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Entrega</h3>
+                            <p>3 días hábiles</p>
+                            <p class="small-text">Gratis en órdenes Q500+</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Pagos</h3>
+                            <p>Visa & MasterCard</p>
+                            <div class="payment-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nombre</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone">
+                            <label for="phone">Teléfono</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="">Seleccionar tema</option>
+                                <option value="producto">Consulta sobre producto</option>
+                                <option value="pedido">Estado de pedido</option>
+                                <option value="personalizada">Tote personalizada</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <label for="subject">Tema</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Tracking Section -->
+    <section id="seguimiento" class="tracking-section">
+        <div class="container">
+            <div class="tracking-content" data-aos="fade-up">
+                <h2 class="section-title">Seguimiento de Órdenes</h2>
+                <p class="section-subtitle">Ingresa tu número de orden para conocer el estado de tu pedido</p>
+                
+                <div class="tracking-form">
+                    <div class="form-group-inline">
+                        <input type="text" id="order-number" placeholder="Número de orden (ej: POP2024001)">
+                        <button type="button" class="btn btn-primary" onclick="trackOrder()">
+                            <i class="fas fa-search"></i>
+                            Rastrear
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="tracking-result" id="tracking-result" style="display: none;">
+                    <div class="order-status">
+                        <h3>Estado de tu pedido</h3>
+                        <div class="status-timeline">
+                            <div class="status-step completed">
+                                <div class="step-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Pedido Confirmado</h4>
+                                    <p>Tu pedido ha sido recibido y confirmado</p>
+                                </div>
+                            </div>
+                            
+                            <div class="status-step current">
+                                <div class="step-icon">
+                                    <i class="fas fa-cog fa-spin"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>En Preparación</h4>
+                                    <p>Estamos preparando tu tote bag</p>
+                                </div>
+                            </div>
+                            
+                            <div class="status-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>En Camino</h4>
+                                    <p>Tu pedido está en ruta de entrega</p>
+                                </div>
+                            </div>
+                            
+                            <div class="status-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Entregado</h4>
+                                    <p>Tu pedido ha sido entregado exitosamente</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Pop The Tote</h3>
+                    <p>Una tote para toda la vida</p>
+                    <p class="footer-tagline">Hecho con ❤️ en Guatemala</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Productos</h4>
+                        <ul>
+                            <li><a href="#productos">Tote Bags Grandes</a></li>
+                            <li><a href="#productos">Tote Bags Medianas</a></li>
+                            <li><a href="#productos">Tote Bags Pequeñas</a></li>
+                            <li><a href="#productos">Ediciones Especiales</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Soporte</h4>
+                        <ul>
+                            <li><a href="#contacto">Contacto</a></li>
+                            <li><a href="#seguimiento">Seguimiento</a></li>
+                            <li><a href="#" onclick="openWhatsApp()">WhatsApp</a></li>
+                            <li><a href="#">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Información</h4>
+                        <ul>
+                            <li><a href="#nosotros">Sobre Nosotros</a></li>
+                            <li><a href="#">Políticas de Envío</a></li>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Política de Privacidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p class="footer-copyright">
+                    © 2024 Pop The Tote Guatemala. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div id="quick-view-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeQuickView()">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="close-cart" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-body" id="cart-body">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Tu carrito está vacío</p>
+                <button class="btn btn-primary" onclick="scrollToSection('productos')">Ver Productos</button>
+            </div>
+        </div>
+        <div class="cart-footer" id="cart-footer" style="display: none;">
+            <div class="cart-total">
+                <h4>Total: <span id="cart-total">Q0</span></h4>
+            </div>
+            <button class="btn btn-primary btn-checkout" onclick="checkout()">
+                <i class="fab fa-whatsapp"></i>
+                Finalizar Compra
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay" onclick="closeModals()"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

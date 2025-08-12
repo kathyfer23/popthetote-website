@@ -1,0 +1,41 @@
+{
+  "name": "pop-the-tote-website",
+  "version": "1.0.0",
+  "description": "Rediseño moderno del sitio web de Pop The Tote Guatemala",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo \"Abra index.html en su navegador web para ver el sitio\" && start index.html",
+    "dev": "echo \"Para desarrollo local, use un servidor HTTP simple como Live Server en VS Code\"",
+    "build": "echo \"El sitio está listo para producción. Sube los archivos a tu servidor web.\"",
+    "test": "echo \"Abra index.html en diferentes navegadores para probar compatibilidad\""
+  },
+  "keywords": [
+    "guatemala",
+    "tote-bag",
+    "ecommerce",
+    "responsive",
+    "website",
+    "whatsapp-integration",
+    "shopping-cart"
+  ],
+  "author": "Pop The Tote Guatemala",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/popthetote/website"
+  },
+  "bugs": {
+    "url": "https://github.com/popthetote/website/issues"
+  },
+  "homepage": "https://popthetote.com",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
